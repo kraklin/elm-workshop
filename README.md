@@ -22,8 +22,7 @@ you should see page with text "Your Elm App is working". Everything should be se
 ### Ellie alternative
 If you prefer not installing anything and stay lightweight, you can find the same code prepared in online tool called Elm Live Editor (a.k.a. Ellie). The workshop was done with Ellie in mind, so you don't have to worry that you'll miss something (except maybe the joy of compiling it to JS by yourself).
 
-You can find the code here [TODO: Add link to Ellie bootstraped code]
-
+You can find the same starting code online in [Ellie App](https://ellie-app.com/96VJmBWw6a1/0)
 
 ## Stage One - Basics
 
@@ -48,10 +47,37 @@ Convert this HTML code to Elm and make it appear on screen.
       		<label>Name</label>
       		<input type="text" placeholder="Name">
   		  </div>
-  		<div class="ui button">Submit</div>
+  		<div class="ui button">Add a friend</div>
 	  </div>
   </div>
 </div>
 ```
 
+## Stage 2 - Model, View, Update
 
+
+### Task 2
+Add cards for view
+```
+  <div class="ui two column cards">
+  <div class="card">
+    <div class="content">
+      <i class="right floated remove red icon link"/>
+      <div class="description">Tony Stark</div>
+    </div>
+  </div>
+  </div>
+```
+
+### Task 3
+Add static name to model after click on the button
+
+```
+import Html.Events exposing (onClick)
+```
+
+### Task 4
+Add value from inputbox
+
+### Task 5
+Remove friend from list
