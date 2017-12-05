@@ -28,8 +28,6 @@ You can find the same starting code online in [Ellie App](https://ellie-app.com/
 
 You can take a look at basic syntax in the nutshell on [Learn Elm in Y minutes](https://learnxinyminutes.com/docs/elm/)
 
-Take a look at `Tuple`, `how to write function`... [TODO: Add more interesting points]
-
 We will focus on `view` part of the program now. To understand the `Html` function and layout, feel free to use 
 [Html to Elm convertor](http://mbylstra.github.io/html-to-elm/), which will create your Elm view code from HTML.
 
@@ -76,8 +74,36 @@ Add static name to model after click on the button
 import Html.Events exposing (onClick)
 ```
 
+Also make the name input clear after adding the name
+
 ### Task 4
-Add value from inputbox
+Change model to `List String` and add static name to list after button click
 
 ### Task 5
-Remove friend from list
+Change model to `Tuple` with first value for input value and the second for the list
+
+### Task 6
+Remove the name from list
+Use `List.filter`. Look at the documentation
+
+### Task 7
+Refactor model to `Record`
+```
+type alias Model =
+    { nameValue : String
+    , friendsList : List String
+    }
+```
+
+### Task 8
+Add `Save` and `Cancel` buttons to form to be able to edit and cancel editing
+
+### Task 9
+Show/hide buttons according to state of form
+- add new state type
+    - `type FormState = Adding | Editing`
+- add it to model
+- refactor buttons to separate view function
+- create action for change of state and add it to new icon on card
+    - 
+- make them visible according to state in model 
