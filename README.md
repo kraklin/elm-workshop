@@ -22,14 +22,11 @@ you should see page with text "Your Elm App is working". Everything should be se
 ### Ellie alternative
 If you prefer not installing anything and stay lightweight, you can find the same code prepared in online tool called Elm Live Editor (a.k.a. Ellie). The workshop was done with Ellie in mind, so you don't have to worry that you'll miss something (except maybe the joy of compiling it to JS by yourself).
 
-You can find the code here [TODO: Add link to Ellie bootstraped code]
-
+You can find the same starting code online in [Ellie App](https://ellie-app.com/96VJmBWw6a1/1)
 
 ## Stage One - Basics
 
 You can take a look at basic syntax in the nutshell on [Learn Elm in Y minutes](https://learnxinyminutes.com/docs/elm/)
-
-Take a look at `Tuple`, `how to write function`... [TODO: Add more interesting points]
 
 We will focus on `view` part of the program now. To understand the `Html` function and layout, feel free to use 
 [Html to Elm convertor](http://mbylstra.github.io/html-to-elm/), which will create your Elm view code from HTML.
@@ -48,10 +45,65 @@ Convert this HTML code to Elm and make it appear on screen.
       		<label>Name</label>
       		<input type="text" placeholder="Name">
   		  </div>
-  		<div class="ui button">Submit</div>
+  		<div class="ui button">Add a friend</div>
 	  </div>
   </div>
 </div>
 ```
 
+## Stage 2 - Model, View, Update
 
+
+### Task 2
+Add cards for view
+```
+  <div class="ui two column cards">
+  <div class="card">
+    <div class="content">
+      <i class="right floated remove red icon link"/>
+      <div class="description">Tony Stark</div>
+    </div>
+  </div>
+  </div>
+```
+
+### Task 3
+Add static name to model after click on the button
+
+```
+import Html.Events exposing (onClick)
+```
+
+Also make the name input clear after adding the name
+
+### Task 4
+Change model to `List String` and add static name to list after button click
+
+### Task 5
+Change model to `Tuple` with first value for input value and the second for the list
+
+### Task 6
+Remove the name from list
+Use `List.filter`. Look at the documentation
+
+### Task 7
+Refactor model to `Record`
+```
+type alias Model =
+    { nameValue : String
+    , friendsList : List String
+    }
+```
+
+### Task 8
+Add `Save` and `Cancel` buttons to form to be able to edit and cancel editing
+
+### Task 9
+Show/hide buttons according to state of form
+- add new state type
+    - `type FormState = Adding | Editing`
+- add it to model
+- refactor buttons to separate view function
+- create action for change of state and add it to new icon on card
+    - 
+- make them visible according to state in model 
