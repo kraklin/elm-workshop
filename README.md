@@ -22,7 +22,7 @@ you should see page with text "Your Elm App is working". Everything should be se
 ### Ellie alternative
 If you prefer not installing anything and stay lightweight, you can find the same code prepared in online tool called Elm Live Editor (a.k.a. Ellie). The workshop was done with Ellie in mind, so you don't have to worry that you'll miss something (except maybe the joy of compiling it to JS by yourself).
 
-You can find the same starting code online in [Ellie App](https://ellie-app.com/96VJmBWw6a1/0)
+You can find the same starting code online in [Ellie App](https://ellie-app.com/96VJmBWw6a1/1)
 
 ## Stage One - Basics
 
