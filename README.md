@@ -77,16 +77,17 @@ import Html.Events exposing (onClick)
 Also make the name input clear after adding the name
 
 ### Task 4
-Change model to `List String` and add static name to list after button click
+Try to annotate every function with types.
+Change model type to `List String` and add static name to list after button click
 
-### Task 5
+### Task 5 - Refactoring
 Change model to `Tuple` with first value for input value and the second for the list
 
 ### Task 6
 Remove the name from list
 Use `List.filter`. Look at the documentation
 
-### Task 7
+### Task 7 - Refactoring
 Refactor model to `Record`
 ```
 type alias Model =
@@ -98,12 +99,22 @@ type alias Model =
 ### Task 8
 Add `Save` and `Cancel` buttons to form to be able to edit and cancel editing
 
+## Stage 3 - Editing friends name
 ### Task 9
+
 Show/hide buttons according to state of form
 - add new state type
     - `type FormState = Adding | Editing`
 - add it to model
 - refactor buttons to separate view function
 - create action for change of state and add it to new icon on card
-    - 
+    -`i [ class "right floated edit icon link"] []`
 - make them visible according to state in model 
+
+### Task 10 - Make the editing work
+When user click Edit icon on card, you should 
+- change the state to Editing
+- copy that name to input box
+- when user clicks Save than change the name to the one currently in input field and go to `Adding` state
+- when user clicks Cancel, don't change the name and go to `Adding` state
+- Always delete the input box from name
