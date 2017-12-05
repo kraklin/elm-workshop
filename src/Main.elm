@@ -7,20 +7,12 @@ import Html.Attributes as Attributes exposing (class)
 ---- MODEL ----
 
 
-type alias Model =
-    String
-
-
 init =
     ( "", Cmd.none )
 
 
 
 ---- UPDATE ----
-
-
-type Msg
-    = NoOp
 
 
 update msg model =
