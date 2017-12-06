@@ -22,7 +22,7 @@ you should see page with text "Your Elm App is working". Everything should be se
 ### Ellie alternative
 If you prefer not installing anything and stay lightweight, you can find the same code prepared in online tool called Elm Live Editor (a.k.a. Ellie). The workshop was done with Ellie in mind, so you don't have to worry that you'll miss something (except maybe the joy of compiling it to JS by yourself).
 
-You can find the same starting code online in [Ellie App](https://ellie-app.com/96VJmBWw6a1/1)
+You can find the same starting code online in [Ellie App](https://ellie-app.com/96VJmBWw6a1/2)
 
 ## Stage One - Basics
 
@@ -34,7 +34,7 @@ We will focus on `view` part of the program now. To understand the `Html` functi
 We will be using [Semantic UI framework](https://semantic-ui.com/introduction/getting-started.html) (the CSS part) for its expressivnes and because I like it. You can try to use another framework of your choice but then you are on your own.
 
 ### Task 1
-Convert this HTML code to Elm and make it appear on screen.
+Convert this HTML code to Elm and make it appear on screen. Use [Html to Elm convertor](http://mbylstra.github.io/html-to-elm/).
 
 ```
 <div class="ui main text container">
@@ -55,7 +55,7 @@ Convert this HTML code to Elm and make it appear on screen.
 
 
 ### Task 2
-Add cards for view
+Add cards for view [Html to Elm convertor](http://mbylstra.github.io/html-to-elm/).
 ```
   <div class="ui two column cards">
   <div class="card">
