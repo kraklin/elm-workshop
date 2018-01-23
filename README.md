@@ -31,6 +31,13 @@ If you prefer not installing anything and stay lightweight, you can find the sam
 
 You can find the same starting code online in [Ellie App](https://ellie-app.com/bFbKXhfRWa1/0)
 
+## Where to find more
+So you are eager to take a look further than to some basic stuff, right? The best place to start gathering your knowledge would definitely be the [Elm website](https://elm-lang.org) and the [Elm Guide](https://guide.elm-lang.org). 
+
+If you got stuck or had any question regarding Elm feel free to post your question to [Elm Slack](http://elmlang.herokuapp.com/) #beginner channel.
+
+Or you can hit me on [socials](https://keybase.io/tomaslatal) or by email tom@tomaslatal.cz
+
 ## Stage One - Basics
 
 You can take a look at basic syntax in the nutshell on [Learn Elm in Y minutes](https://learnxinyminutes.com/docs/elm/)
